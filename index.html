@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>6th month🤍</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Small Pink Music Player -->
+<div id="musicPlayer">
+  <div class="music-info">
+    <span>🎵 yung kai - blue</span>
+    <div class="music-controls">
+      <button id="playPause">▶️</button>
+      <button id="volumeToggle">🔊</button>
+    </div>
+  </div>
+  <audio id="backgroundMusic" loop>
+    <source src="yung kai - blue.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<!-- Envelope -->
+<div id="page1">
+  <div class="envlope-wrapper">
+    <div id="envelope" class="envelope close">
+      <div class="front flap"></div>
+      <div class="front pocket"></div>
+      <div class="letter">
+        <div class="words line1"></div>
+        <div class="words line2"></div>
+        <div class="words line3"></div>
+        <div class="words line4"></div>
+      </div>
+    </div>
+  </div>
+  <div class="reset">
+    <button id="open">🫶🏻</button>
+  </div>
+</div>
+
+<!-- Name Input -->
+<div id="nameForm" class="hidden">
+  <h2>hello, my love! how's your day?</h2>
+  <img src="https://i.pinimg.com/1200x/23/60/a2/2360a26a6dba285a17b39f66b5715273.jpg" style="width:200px; border-radius:1rem; margin:1rem 0;" />
+  <p>please tell me :< :&lt;</p>
+  <button onclick="wellbeingResponse('Good')">great o(〃＾▽＾〃)o</button>
+  <button onclick="wellbeingResponse('Not good')">not so great (￣へ ￣凸</button>
+</div>
+
+<!-- Personalized Message -->
+<div id="messageSection" class="hidden">
+  <p id="greetingText"></p>
+  <img src="https://i.pinimg.com/736x/98/2b/06/982b0681814646882d006d831d0265a8.jpg" style="width:200px; border-radius:1rem; margin:1rem 0;" />
+  <p> a little kiss for my love 😚</p>
+  <button onclick="askMara()">Continue ✉️</button>
+</div>
+
+<!-- are you excited for our special day? -->
+<div id="Mara" class="hidden">
+  <h2>are you excited for our special day?</h2>
+  <img src="https://i.pinimg.com/736x/e5/2b/20/e52b20909fef92fe32f42b0ccb8c57a6.jpg" alt="Cat4" style="width: 200px; border-radius: 1rem; margin:1rem 0;" />
+<p></p>
+  <button onclick="MaraResponse('Yes')">yes!I can't wait (⁠｡⁠♡⁠‿⁠♡⁠｡⁠)凸( •‌_•‌ )凸</button>
+  <button onclick="MaraResponse('No')">tell me more first (〃▽〃)</button>
+</div>
+
+<!-- ready for your surprise? -->
+<div id="SorrySection" class="hidden">
+  <h2>ready for your surprise? 🥰</h2>
+<img src="https://i.pinimg.com/736x/3a/00/27/3a00279127895a7910fd907b7395a5c9.jpg" alt="Cat1" style="width: 200px; border-radius: 1rem; margin:1rem 0;" />
+  <p>I made something special just for you!</p>
+  <button onclick="sorryResponse('Yes')">yes, pleasee</button>
+  <button onclick="sorryResponse('No')">I'm curious, show mee!</button>
+</div>
+
+<!-- Apology -->
+<div id="apologySection" class="hidden">
+  <h2>HAPPY 6TH MONTH, MY LOVE!</h2>
+<img src="https://i.pinimg.com/736x/ee/f6/84/eef684d8ca19caa16d5566e53f907629.jpg" alt="Cat3" style="width: 200px; border-radius: 1rem; margin:1rem 0;" />
+  <p>half a year and still into you</p>
+  <p>happy six months to us, love! I still couldn't believe that I'm with you—the man of my dreams. I'm grateful to have you as my partner, where I can be me and love me for who I am. and as our relationship grows, my love for you grows along with it. we've been through so much already, and I'll never get tired of choosing you no matter how life may treat us. I love how we built this relationship with trust and full of love—you never made me feel like I'm in a competition with anyone. and when life gets tough, just thinking of you alone soothes me. being with you is like breathing fresh air, holding your hand comforts me, and hugging you makes me feel at home. and whenever I came to see you, it felt like coming home—the place where I belong. happy day to us, my love, and I can't wait for all the months and years to come with you! I love you so much, love!
+</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<div class="hearts-bg"></div>
+
+</body>
+</html>
